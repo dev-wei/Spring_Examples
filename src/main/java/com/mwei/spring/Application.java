@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 @ComponentScan
@@ -26,7 +27,7 @@ public class Application {
         System.out.println("Website: " + page.getWebsite());
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         if (args != null && args.length == 1) {
             String arg = args[0];
             Iterable<String> it = Arrays.asList(args);
@@ -38,9 +39,8 @@ public class Application {
             } else if (arg.equals("gs_consuming_rest")) {
                 gs_consuming_rest(trimmedArgs);
             }
-            return;
         }
 
-        gs_rest_service(args);
+        System.out.println("Parameter is wrong.");
     }
 }
