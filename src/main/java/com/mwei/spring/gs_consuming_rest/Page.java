@@ -25,5 +25,4 @@ public class Page {
     public String getWebsite() {
         return website;
     }
-    
 }
