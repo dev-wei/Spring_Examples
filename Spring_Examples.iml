@@ -67,6 +67,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-websocket:4.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:7.0.54" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:1.5.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.8.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.12.2" level="project" />
   </component>
 </module>
 
